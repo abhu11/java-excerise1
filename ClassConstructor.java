@@ -8,7 +8,7 @@ public class ClassConstructor {
    public static void main(String[] args) {
       MyFunctionalInterface mf = Student::new;    //  Constructor Reference
 
-      BiFunction<Integer, String, Student> f1 = Student::new;
+      BiFunction<Integer, Striang, Student> f1 = Student::new;
       BiFunction<Integer, String, Student> f2 = (id, name) -> new Student(id,name);
 
       System.out.println(mf.getStudent(101, "Adithya").getId());
